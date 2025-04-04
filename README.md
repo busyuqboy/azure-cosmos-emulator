@@ -117,7 +117,7 @@ The application includes logic to programmatically retrieve and trust the emulat
        if (url.Contains("azurecosmosemulator"))
        {
            var uri = new Uri(url);
-           var cert = CosmosDBExtensions.GetServerCertificate(uri);
+           var cert = GetServerCertificate(uri);
            var handler = new HttpClientHandler
            {
                ServerCertificateCustomValidationCallback = (request, serverCert, chain, errors) =>
