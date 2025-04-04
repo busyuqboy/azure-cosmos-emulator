@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AzureCosmosEmulator": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
